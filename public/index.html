@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<head>
+    <title>Profile form</title>
+</head>
+<body>
+    <h1>save a picture in bdd</h1>
+    <form method="POST" action="/profile-upload-single" enctype="multipart/form-data">
+        <div>
+            <label>Upload profile picture</label>
+            <input type="file" name="profile-file" required/>
+        </div>
+        <div>
+            <input type="submit" value="Upload" />
+        </div>
+    </form>
+
+    <hr>
+
+    <!-- <form method="POST" action="/profile-upload-multiple" enctype="multipart/form-data">
+        <div>
+            <label>Upload multiple profile picture</label>
+            <input type="file" name="profile-files" required multiple  />
+        </div>
+        <div>
+            <input type="submit" value="Upload" />
+        </div>
+    </form> -->
+
+    <h1>download a picture from bdd</h1>
+    <form method="POST" action="/profile-download-single" enctype="multipart/form-data">
+        <div>
+            <label>Upload profile picture id</label>
+            <input type="number" name="id" required/>
+        </div>
+        <div>
+            <input type="submit" value="download" />
+        </div>
+    </form>
+
+</body>
+</html>
